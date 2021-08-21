@@ -44,11 +44,15 @@ a:focus {
     text-decoration: underline;
 }
 
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    margin: 0 auto;
+   
 }
 
 .current-page {
