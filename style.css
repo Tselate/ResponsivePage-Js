@@ -1,11 +1,7 @@
-
-*{
-    margin: 0;
-}
-
 body {
     font-family: 'Roboto Slab', serif;
-    font-weight: 300;
+    margin: 0;
+    font-size: 1.125rem;
 }
 
 header {
@@ -14,10 +10,50 @@ header {
     padding: 5em 0;
 }
 
+img {
+    width: 1000px;
+}
+
+/*=============
+    Typography
+=============*/
+
 h1 {
+    font-family: 'Roboto Slab', serif;
     font-weight: 700;
     font-size: 5rem;
 }
+
+h2, 
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color: #da3300;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover, 
+.article-read-more:focus {
+    color: #641b05;
+    text-decoration: underline;
+}
+
+/*=============
+    Navigation
+=============*/
 
 nav ul {
     padding: 0;
@@ -28,7 +64,8 @@ nav ul {
 
 nav li {
     font-size: 5rem; 
-    margin: 1.75em 0 0 1.5em
+    margin: 1.75em 0 0 0;
+    padding-left: 5em;
 }
 
 nav a {
@@ -44,19 +81,23 @@ a:focus {
     text-decoration: underline;
 }
 
-.container {
-    width: 95%;
-    margin: 0 auto;
-}
-
 .nav-container {
     display: flex;
     justify-content: space-between;
    
 }
 
+/*=============
+    Layout
+=============*/
+
 .current-page {
     text-decoration: underline;
+}
+
+.container {
+    border: 5px solid red;
+    margin: 0 auto; 
 }
 
 @media (max-width: 675px) {
